@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D share</title>
+  <style>
+    html, body {
+      height: 100%;
+      color: white;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url(img/bg.png) no-repeat #fff;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      font-family: "Open Sans", arial, sans-serif;
+      font-weight: 300;
+    }
+
+    .top {
+      position: absolute;
+      top:0;
+      transform: translate(0,-50%);
+    }
+
+    main {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+      width: 100%;
+    }
+
+    .content > *:first-child {
+      margin-top: 80px;
+    }
+
+    .content > * {
+      margin: 0 24px;
+    }
+
+    .content > p {
+      margin: 24px 0;
+    }
+
+    footer {
+      padding-top: 6px;
+    }
+
+  </style>
+</head>
+<body>
+<main>
+  <div class="top"><img src="img/top.png" /></div>
+  <div class="content">
+    <img src="img/3d-share.png" alt="3D share" class="logo" />
+    <img src="img/3d-share-contact.png" alt="3D share" class="logo" />
+    <p>
+      Urs Pospischil und Nils Pospischil GbR
+      &middot; Kalscheurener Str. 19
+      &middot; 50354 Hürth
+    </p>
+  </div>
+</main>
+
+</body>
+</html>
